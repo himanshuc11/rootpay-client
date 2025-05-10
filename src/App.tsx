@@ -20,12 +20,12 @@ function App() {
     rootpay.init()
 
     rootpay.subscribe((data) => {
-      console.log('::WOHOOO', data)
+      alert('Received Data' +  JSON.stringify(data))
     })
   }, [])
 
   return (
-   <div id='def' />
+   <div id='def' style={{width: "100dvw", height: "100dvh"}} />
   )
 }
 
